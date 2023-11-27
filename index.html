@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html type='en'>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		digi clock
+	</title>
+	<link rel="stylesheet" href="STYLE.css">
+
+	<div class="clock">
+		<div id="hour"></div>
+		<span></span>
+		<div id="minute"></div>
+		<span></span>
+		<div id="seconds"></div>
+	</div>
+	<script src="script.js"></script>
+	<div id="clock" onclick="toggleClockFormat()"> loading... </div>
+
+<script >
+
+		function toggleclockFormat()
+		{
+			const clock=document.getElementById('clock');
+			const currentime=new Date();
+			const hours=currentime.getHours();
+			const is24HourFormat=clock.classList.toggle('twenty-four-hour');
+			if(is24HourFormat)
+			{
+				clock.innerHTML='<span class="number"> hours </span>'
+			}
+			else
+			{
+				updateClock();
+			}
+
+		}
+	</script>
+</head>
+
+
+	<body>
+	<div id="clock" onclick="toggleClockFormat()">GMT</div>
+	</body>
+</html>

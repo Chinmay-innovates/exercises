@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <link ref="stylesheet" href="style1.css">
+  <title>Digital Clock</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color:gold;
+    }
+
+    /* Style for the digital clock */
+    #clock {
+      font-size: 6em;
+      text-align: center;
+      color: #333;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.98);
+    }
+    #formatToggle
+    {
+      letter-spacing: 1px;
+      font-family: sans-serif;
+      border: whitesmoke;
+      border-left-color: black;
+      border-radius: 5px;
+     }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    // JavaScript for the digital clock 
+    function displayTime() {
+      const clockElement = document.getElementById('clock');
+      const currentTime = new Date();
+      const hours = currentTime.getHours();
+      const minutes = currentTime.getMinutes();
+      const seconds = currentTime.getSeconds();
+
+      const formattedHours = hours < 10 ? '0' + hours : hours;
+      const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+      const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+      clockElement.textContent = formattedHours + ":" + formattedMinutes + ":" + formattedSeconds;
+    }
+
+    setInterval(displayTime, 1000);
+    displayTime();
+  </script>
+
+  <div id="clock"></div>
+  <button id="formatToggle">ToggleFormat</button>
+
+  <script>
+    let is12HourFormat = false;
+
+    function displayTime()
+     {
+      const clockElement = document.getElementById('clock');
+      const currentTime = new Date();
+      let hours = currentTime.getHours();
+      const minutes = currentTime.getMinutes();
+      const seconds = currentTime.getSeconds();
+
+      let meridiem = '';
+
+      if (is12HourFormat)
+       {
+        meridiem = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+      }
+
+      const formattedHours = hours < 10 ? '0' + hours : hours;
+      const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+      const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+      const timeString = is12HourFormat ?
+        `${formattedHours}:${formattedMinutes}:${formattedSeconds} ${meridiem}` :
+        `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+      clockElement.innerHTML= timeString;
+    }
+
+    function toggleFormat() 
+    {
+      is12HourFormat = !is12HourFormat;
+      displayTime();
+    }
+
+    setInterval(displayTime, 1000);
+    displayTime();
+
+    const formatToggleButton = document.getElementById('formatToggle');
+    formatToggleButton.addEventListener('click', toggleFormat);
+  </script>
+</body>
+</html>
