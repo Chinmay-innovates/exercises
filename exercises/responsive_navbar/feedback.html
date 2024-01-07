@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback-styles.css">
+    <script src="script2.js" defer ></script>
+
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h2>Registration</h2>
+            <format aria-autocomplete="off" class="form">
+                <div class="form-group">
+                    <label for="fullname" class="input-label">Fullname</label>
+                    <input type="text" name="fullname" class="input" placeholder="Fullname">
+                    <small class="input-alert"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="input-label">Email</label>
+                    <input type="email" name="email" class="input" placeholder="Email">
+                    <small class="input-alert"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" name="password" class="input" placeholder="Password">
+                    <small class="input-alert"></small>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class="input-label">Confirm Password</label>
+                    <input type="password" name="confirmPassword"  class="input" placeholder="Confirm Password">
+                    <small class="input-alert"></small>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script2.js" defer ></script>
+</body>
+</html>

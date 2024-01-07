@@ -1,0 +1,423 @@
+*{
+	padding: 0;
+	margin: 0;
+    border: border-box;
+	font: sans-serif;
+
+}
+.list-items{
+	width: 40px;
+	height: 40px;
+}
+.navbar{
+	height: 60px;
+	background-color: #0f1111;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nav-logo{
+	height: 55px;
+	width: 200px;
+}
+
+.border{
+	border: 2px solid transparent;
+    height: 60px;
+    width: fit-content;
+}
+.border:hover{
+	border: 1.20px solid white;
+}
+/**box2**/
+.add-first{
+	color: #cccccc;
+	font-size: 0.85rem;
+	margin-left: 14px;
+
+}
+.add-second{
+	font-size: 1rem;
+	margin-left: 3px;
+}
+.add-icon{
+	display: flex;
+	align-items: center;
+
+}
+/**box3**/
+.nav-search{
+	display: flex;
+	justify-content: space-evenly;
+	width: 620px;
+	height: 40px;
+	border-radius:4px ;
+}
+.serch-select{
+	background-color: #f3f3f3;
+	width: 50px;
+	text-align: center;
+	border: none;
+	border-top-left-radius:4px ;
+	border-bottom-left-radius:4px;
+}
+.search-input{
+	width: 100%;
+	font-size: 1rem;
+}
+.search-icon{
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	background-color: #febd68;
+	border-top-right-radius:4px ;
+	border-bottom-right-radius:4px;
+	color: #0f1111;
+
+}
+
+.nav-search:hover{
+	border: 2px solid orange
+
+}
+
+/**box4**/
+span{
+	font-size: 0.7rem;
+}
+.nav-second{
+	font-size: 0.85rem;
+	font-weight: 750;
+}
+
+/**box6**/
+.nav-cart i{
+   padding: 30px 0px 0px 0px ;
+   height: 35px;	
+   width: 25px;
+
+}
+.nav-cart{
+	font-size: 0.85rem;
+	font-weight: 700;
+	display: in-flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+
+}
+/**panel**/
+.panel-ops{
+	display: flex;
+	font-size: 0.85rem;
+}
+.panel{
+	height: 40px;
+	background-color: #222f3d;
+	display: flex;
+	color: whitesmoke;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.panel-ops p{
+	display: inline;
+	margin-left: 20px;
+}
+.panel-deals{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.panel p border {
+	height: 300px;
+	width: 300px;
+}
+
+/**hero img**/
+.hero-section{
+	background-image: url("hero-img.jpg");
+	height: 400px;
+	width: 1300px	;
+	background-size: cover;
+	display: flex;
+
+}	
+.hero-msg{
+	background-color: whitesmoke;
+	color: black;
+   height: 40px;
+   display: flex;
+   justify-content: space-around;
+   font-size: 0.85rem;
+   justify-content: centre;
+   width: 80%;
+   align-items: center;
+   margin-left: 130px;
+  margin-top: 350px;
+}	
+.hero-msg a{
+	color: #007185;
+}	
+
+/*shop-section*/
+.shop-section{
+	display: flex;
+	margin-left: 20px;
+	justify-content: block;
+}
+.box{
+	margin-right: 10px;
+	margin-top: 10px;
+   width: 300px; 
+   height: 500px;
+	background-color: whitesmoke;
+	display: block;
+	align-items: center;
+
+}
+.box1-img{
+
+	height: 150px;
+	width: 150px;
+	display: flex;
+	background-image: url(C:\\Users\\CHINMAY\\Downloads\\pictures\\box1.jpg)
+
+
+}	
+
+.box-content{
+	margin-left: 1rem;
+	margin-right: 1rem ;
+}
+.box1-img p{
+	color: #007185;
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+    border: border-box;
+	font: sans-serif;
+
+}
+.list-items{
+	width: 40px;
+	height: 40px;
+}
+.navbar{
+	height: 60px;
+	background-color: #0f1111;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.nav-logo{
+	height: 55px;
+	width: 200px;
+}
+.logo{
+	background-image: url("C:\\Users\\CHINMAY\\Downloads\\pictures\\logo2.0.png");
+	background-size: cover;
+	height: 55px;
+	width: 190px;
+}
+.border{
+	border: 2px solid transparent;
+}
+.border:hover{
+	border: 1.20px solid white;
+}
+/**box2**/
+.add-first{
+	color: #cccccc;
+	font-size: 0.85rem;
+	margin-left: 14px;
+
+}
+.add-second{
+	font-size: 1rem;
+	margin-left: 3px;
+}
+.add-icon{
+	display: flex;
+	align-items: center;
+
+}
+/**box3**/
+.nav-search{
+	display: flex;
+	justify-content: space-evenly;
+	width: 620px;
+	height: 40px;
+	border-radius:4px ;
+}
+.serch-select{
+	background-color: #f3f3f3;
+	width: 50px;
+	text-align: center;
+	border: none;
+	border-top-left-radius:4px ;
+	border-bottom-left-radius:4px;
+}
+.search-input{
+	width: 100%;
+	font-size: 1rem;
+}
+.search-icon{
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	background-color: #febd68;
+	border-top-right-radius:4px ;
+	border-bottom-right-radius:4px;
+	color: #0f1111;
+
+}
+
+.nav-search:hover{
+	border: 2px solid orange
+
+}
+
+/**box4**/
+span{
+	font-size: 0.7rem;
+}
+.nav-second{
+	font-size: 0.85rem;
+	font-weight: 750;
+}
+
+/**box6**/
+.nav-cart i{
+   padding: 30px 0px 0px 0px ;
+   height: 35px;	
+   width: 25px;
+
+}
+.nav-cart{
+	font-size: 0.85rem;
+	font-weight: 700;
+	display: in-flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+
+}
+/**panel**/
+.panel-ops{
+	display: flex;
+	font-size: 0.85rem;
+}
+.panel{
+	height: 40px;
+	background-color: #222f3d;
+	display: flex;
+	color: whitesmoke;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.panel-ops p{
+	display: inline;
+	margin-left: 20px;
+}
+.panel-deals{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.panel p border {
+	height: 300px;
+	width: 300px;
+}
+
+/**hero img**/
+.hero-section{
+	background-image: url("C:\\Users\\CHINMAY\\Downloads\\pictures\\hero-img.jpg");
+	height: 400px;
+	width: 1300px	;
+	background-size: cover;
+	display: flex;
+
+}	
+.hero-msg{
+	background-color: whitesmoke;
+	color: black;
+   height: 40px;
+   display: flex;
+   justify-content: space-around;
+   font-size: 0.85rem;
+   justify-content: centre;
+   width: 80%;
+   align-items: center;
+   margin-left: 130px;
+  margin-top: 350px;
+}	
+.hero-msg a{
+	color: #007185;
+}	
+
+/*shop-section*/
+.shop-section{
+	display: flex;
+	margin-left: 20px;
+	justify-content: block;
+}
+.box{
+	margin-right: 10px;
+	margin-top: 10px;
+   width: 300px; 
+   height: 500px;
+	background-color: whitesmoke;
+	display: block;
+	align-items: center;
+
+}
+.box1-img{
+
+	height: 150px;
+	width: 150px;
+	display: flex;
+	background-image: url(C:\\Users\\CHINMAY\\Downloads\\pictures\\box1.jpg)
+
+
+}	
+
+.box-content{
+	margin-left: 1rem;
+	margin-right: 1rem ;
+}
+.box1-img p{
+	color: #007185;
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

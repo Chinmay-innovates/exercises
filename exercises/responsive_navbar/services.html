@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>\<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-services.css">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <img src="images/emma.png" class="user-pic" onclick="toggleMenu()">
+
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="images/emma.png" id="emma">
+                        <h3>Emma Watson</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link " id="icon">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Edit profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link icon">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Setings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link icon">
+                        <i class="fa-solid fa-question"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link icon">
+                        <i class="fa-solid fa-right-from-bracket" ></i>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="script3.js" defer></script>
+    <script>
+        let subMenu = document.getElementById('subMenu');
+        function toggleMenu(){
+            subMenu.classList.toggle('open-menu');
+        }
+    </script>
+</body>
+
+</html>
