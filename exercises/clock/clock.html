@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		
+		#clock
+		{
+			font-size:  50px;
+			font-family: 'Arial', sans-serif;
+			text-align: center;
+			margin-top: 50px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		body
+		{
+          background-color: #f0f0f0;
+          display: flex;
+          align-items: center;
+          height: 100vh;
+          margin:50px;
+          justify-content: center;
+		}
+
+	</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		clock
+	</title>
+</head>
+<body >
+	
+	<div id="clock"> 
+
+	<script>
+
+		setInterval(clock,1000)
+		function clock()
+		{
+		var dt=new Date();
+		var hh=dt.getHours();
+		var mm=dt.getMinutes();
+		var ss=dt.getSeconds();
+		let time=hh+":"+mm+":"+ss
+		document.getElementById("clock").textContent=time  
+	   
+		}clock()
+	</script>
+<!-- 
+	<script >
+		function toggleclockFormat()
+		{
+			const clock=document.getElementById('clock');
+			const currentime=new Date();
+			const hours=currentime.getHours();
+			const is24HourFormat=clock.classList.toggle('twenty-four-hour');
+			if(is24HourFormat)
+			{
+				clock.textContent=currentime.toLocalTimeString('en-US',{hour12:false});
+
+			}
+			else
+			{
+				updateClock();
+			}
+
+		}
+
+	</script>
+	<body>
+		<div id="clock" onclick="toggleClockFormat()"> </div>
+	</body>
+	 -->
+</div>
+  
+</body>
+</html>

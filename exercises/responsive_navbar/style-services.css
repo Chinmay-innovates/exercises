@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Trirong",sans-serif;;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    color: #525252;
+  
+}
+
+nav{
+    background: #1a1a1a;
+    width: 100%;
+    height: 110px;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    width: 120px;
+}
+.user-pic{
+    width: 90px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+#emma{
+  width: 138px;
+  height:138px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+nav ul li{
+ display: inline-block;
+ list-style: none;
+ margin :10px 20px;
+}nav ul li a { 
+    color: #fff;
+    text-decoration: none;
+}
+.sub-menu-wrap{
+ position:relative;
+ bottom: -250px;
+ right: 250px;
+ width: 200px;
+ height:200px;
+ max-height: 0px;
+ overflow: hidden;
+ transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+   max-height: 1500px;
+ width: 1500px;
+}
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: -75px;
+    width: 350px;
+    height: max-content;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin:12px 12px;
+}
+.sub-menu-link p{
+    width: 100%;
+    margin: 5px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transform: 0.5s;
+}
+/* hover effect */
+.sub-menu-link :hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover{
+ font-weight: 600s;
+}
