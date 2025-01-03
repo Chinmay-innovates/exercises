@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define BIT "01111110"
+#define FLAG "01111110"
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
     scanf("%s", a);
 
     // Add the opening BIT flag
-    strcat(fs, BIT);
+    strcat(fs, FLAG);
 
     for (i = 0; a[i] != '\0'; i++)
     {
@@ -38,7 +38,7 @@ int main()
     }
 
     // Add the closing BIT flag
-    strcat(fs, BIT);
+    strcat(fs, FLAG);
 
     printf("\nThe final string is: %s\n", fs);
 
